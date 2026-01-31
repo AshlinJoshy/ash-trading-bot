@@ -4,12 +4,22 @@ A dual-AI trading system that uses **Claude (Anthropic)** and **Gemini (Google)*
 
 ## Features
 
+- **🖥️ Web Dashboard**: Beautiful Streamlit interface to monitor everything
 - **🧠 Dual AI Analysis**: Compare trading decisions between Claude and Gemini
 - **📰 News Sentiment Analysis**: Pre-market news scanning and sentiment scoring
 - **📊 Technical Analysis**: Support/resistance levels, candlestick patterns, indicators (RSI, MACD, Bollinger Bands, etc.)
 - **💹 Demo Trading**: Safe paper trading on Alpaca's paper trading platform
 - **📈 Performance Tracking**: SQLite database tracking trades, wins, losses, and bot comparison
 - **⚡ Risk Management**: Automatic stop-loss, take-profit, and position sizing
+
+## Dashboard Preview
+
+The web dashboard includes:
+- 📊 **Portfolio Overview** - Account balance, positions, P&L
+- 🏆 **Bot Comparison** - Side-by-side Claude vs Gemini performance
+- 📈 **Technical Charts** - Candlestick charts with indicators
+- 📰 **News Feed** - Latest market news with sentiment scores
+- 🚀 **Run Analysis** - Trigger AI analysis with one click
 
 ## Quick Start
 
@@ -43,6 +53,13 @@ ALPACA_BASE_URL=https://paper-api.alpaca.markets
 
 ### 3. Run the System
 
+**Option A: Web Dashboard (Recommended)**
+```bash
+streamlit run dashboard.py
+```
+Then open http://localhost:8501 in your browser.
+
+**Option B: Command Line**
 ```bash
 # Full trading cycle (analysis + trading)
 python main.py

@@ -41,6 +41,7 @@ pyyaml>=6.0.1
 rich>=13.7.0
 loguru>=0.7.2
 
-# Visualization
+# Visualization & Dashboard
 matplotlib>=3.8.0
 plotly>=5.18.0
+streamlit>=1.31.0
